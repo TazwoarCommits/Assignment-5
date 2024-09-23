@@ -29,14 +29,15 @@
             <nav class="">
                 <div class="navbar mt-0 md:px-8 backdrop-blur-3xl rounded-lg">
                     <div class="navbar-start">
-                        <a id="home" class="btn border-none bg-lime-400  hover:bg-lime-500 text-xl font-semibold">Home</a>
+                        <a id="home"
+                            class="btn border-none bg-lime-400  hover:bg-lime-500 text-xl font-semibold">Home</a>
                     </div>
                     <div class="navbar-center gap-x-4 hidden md:flex">
                         <img src="./assets/logo.png" alt="">
                         <p class="text-xl font-semibold">Donate Bangladesh</p>
                     </div>
                     <div class="navbar-end">
-                        <p class=" text-xl font-semibold secondary-text"><span id="available-balance" ></span> </p>
+                     <img src="./assets/coin.png">  <p class=" text-xl font-semibold secondary-text"><span id="available-balance-blog">5500</span> BDT</p>
                     </div>
                 </div>
             </nav>
@@ -47,12 +48,48 @@
             </div>
         </div>
     </header>
-    
-    
-
-
-
-
-      <script src="./JS/blog.js"></script>
+    <main>
+        <!-- FAQ section -->
+        <section class="mt-12 md:mt-16 container mx-auto">
+              <div class="mb-8 md:mb-12 text-center">
+                  <h1 class="text-2xl font-bold text-cyan-700">You may Find Your Answers Here</h1>
+              </div>
+              <div>
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model ?</div>
+                    <div class="collapse-content">
+                      <p>he Document Object Model (DOM) is more like a <span class="text-fuchsia-700">blueprint</span> or <span class="text-fuchsia-700">map</span> of our html file. It helps our computer to find and <span class="text-fuchsia-700">interact</span> with each part of the website.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you select element from the DOM ?</div>
+                    <div class="collapse-content">
+                      <p>We can select an element using <span class="text-fuchsia-700">.getElementById</span> , <span class="text-fuchsia-700"> .getElementsByClassName</span> , <span class="text-fuchsia-700"> .getElementsByTagName</span> , <span class="text-fuchsia-700"> .querySelector</span> , <span class="text-fuchsia-700"> .querySelectorAll</span></p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the contect of the DOM and why is it useful ?</div>
+                    <div class="collapse-content">
+                      <p>Event delegation is a technique where we can attach an event listener to a parent element instead of directly to each child element. it is useful because its <span class="text-fuchsia-700">Efficiency</span> , <span class="text-fuchsia-700"> Dynamic content </span> and <span class="text-fuchsia-700"> Simplified code</span></p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the Dom ?</div>
+                    <div class="collapse-content">
+                      <p>There are 2 ways to manipulate attributes such as <span class="text-fuchsia-700">.getAttribute</span> , <span class="text-fuchsia-700"> .setAttribute</span> and for accessing styles we mostly use</p> 
+                      <p> <span class="text-fuchsia-700">element.style.propertyName = "new-value"</span> to set a style property directly.</p>
+                      <p><span class="text-fuchsia-700">element.classList.add("class-name")</span> to add a class to the element.</p>
+                      <p><span class="text-fuchsia-700">element.classList.remove("class-name")</span> to remove a class from the element.</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+    </main>
+    <script src="./JS/blog.js"></script>
 </body>
+
 </html>
