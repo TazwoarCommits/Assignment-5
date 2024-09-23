@@ -59,7 +59,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         return alert('Invalid') ;
     }
 
-    if (availableBalanceNumber <= forNoakhaliNumber) {
+    if (availableBalanceNumber < forNoakhaliNumber) {
         document.getElementById('amount-for-noakhali').value = '';
         return alert('Insufficient Balance');
     } else {
@@ -91,7 +91,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
         return alert('Invalid');
     }
 
-    if (availableBalanceNumber <= forFeniNumber) {
+    if (availableBalanceNumber < forFeniNumber) {
         document.getElementById('amount-for-feni').value = '';
         return alert('Insufficient Balance')
     } else {
@@ -123,7 +123,7 @@ document.getElementById('btn-donate-students').addEventListener('click' , functi
        return alert ('Invalid');
    }  
    
-   if(availableBalanceNumber <= forStudentNumber){
+   if(availableBalanceNumber < forStudentNumber){
     alert ('Insufficient Balance') ;
     document.getElementById('amount-for-student').value = '' ;
    } else{
