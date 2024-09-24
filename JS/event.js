@@ -56,7 +56,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
     document.getElementById('amount-for-noakhali').value = '';
 
-    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
+    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 
 });
 
@@ -105,7 +105,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
     document.getElementById('amount-for-feni').value = '';
 
-    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
+    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 });
 
 
@@ -153,7 +153,7 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
 
     document.getElementById('amount-for-student').value = ''
 
-    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
+    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 });
 
 
