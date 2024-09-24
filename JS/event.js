@@ -47,7 +47,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
     historyItem1.innerHTML = `
   <h2 class = "text-xl md:text-3xl font-semibold"> ${forNoakhaliNumber} Taka is Donated for famine-2024 at Noakhali, Bangladesh </h2>
-  <p> ${new Date().toLocaleDateString()} </p>
+  <p> ${new Date()} </p>
 `;
 
     const historyContainer = document.getElementById('history-container');
@@ -95,7 +95,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
     historyItem2.innerHTML = `
   <h2 class = "text-xl md:text-3xl font-semibold"> ${forFeniNumber} Taka is Donated for famine-2024 at Feni, Bangladesh </h2>
-  <p> ${new Date().toLocaleDateString()} </p>
+  <p> ${new Date()} </p>
 `;
 
     const historyContainer = document.getElementById('history-container');
@@ -143,7 +143,7 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
 
     historyItem3.innerHTML = `
   <h2 class = "text-xl md:text-3xl font-semibold"> ${forStudentNumber} Taka is Donated for famine-2024 at Feni, Bangladesh </h2>
-  <p> ${new Date().toLocaleDateString()} </p>
+  <p> ${new Date()} </p>
 `;
 
     const historyContainer = document.getElementById('history-container');
