@@ -6,7 +6,7 @@ document.getElementById('blog').addEventListener('click', function () {
 
 
 
-// ------------------------------------------  Reusable Get Value Function ----------------------------
+// ------------------------------------------ One Reusable Get Value Function ----------------------------
 
 function getNumber(string) {
     const number = parseFloat(string);
@@ -24,7 +24,6 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     let availableBalance = document.getElementById('available-balance').innerText;
     let availableBalanceNumber = getNumber(availableBalance);
 
-
     if (isNaN(forNoakhaliNumber) || forNoakhaliNumber <= 0) {
         document.getElementById('amount-for-noakhali').value = '';
         return alert('Invalid');
@@ -35,10 +34,10 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         return alert('Insufficient Balance');
     } else {
         const updatedNoakhaliNumber = forNoakhaliNumber + raisedForNoakhaliNumber;
-        document.getElementById('raised-for-noakhali').innerText = updatedNoakhaliNumber;
+        document.getElementById('raised-for-noakhali').innerText = updatedNoakhaliNumber.toFixed(2);
 
         let UpdatedBalanceNumber = availableBalanceNumber - forNoakhaliNumber;
-        document.getElementById('available-balance').innerText = UpdatedBalanceNumber;
+        document.getElementById('available-balance').innerText = UpdatedBalanceNumber.toFixed(2);
 
     }
 
@@ -56,6 +55,8 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     historyContainer.insertBefore(historyItem1, historyContainer.firstChild);
 
     document.getElementById('amount-for-noakhali').value = '';
+
+    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
 
 });
 
@@ -80,11 +81,11 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
         return alert('Insufficient Balance')
     } else {
         const updatedFeniNumber = forFeniNumber + raisedForFeniNumber;
-        document.getElementById('raised-for-feni').innerText = updatedFeniNumber;
+        document.getElementById('raised-for-feni').innerText = updatedFeniNumber.toFixed(2);
 
         let UpdatedBalanceNumber = availableBalanceNumber - forFeniNumber;
 
-        document.getElementById('available-balance').innerText = UpdatedBalanceNumber;
+        document.getElementById('available-balance').innerText = UpdatedBalanceNumber.toFixed(2);
 
     }
 
@@ -103,6 +104,8 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
 
     document.getElementById('amount-for-feni').value = '';
+
+    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
 });
 
 
@@ -127,11 +130,11 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
     } else {
 
         const updateStudentNumber = forStudentNumber + raisedForStudentNumber;
-        document.getElementById('raised-for-students').innerText = updateStudentNumber;
+        document.getElementById('raised-for-students').innerText = updateStudentNumber.toFixed(2);
 
         let UpdatedBalanceNumber = availableBalanceNumber - forStudentNumber;
 
-        document.getElementById('available-balance').innerText = UpdatedBalanceNumber;3
+        document.getElementById('available-balance').innerText = UpdatedBalanceNumber.toFixed(2);
     }
 
     const historyItem3 = document.createElement('div');
@@ -149,6 +152,8 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
 
 
     document.getElementById('amount-for-student').value = ''
+
+    return alert(' Congrtes!!! You Have Donated For Humankind Successfully.')
 });
 
 

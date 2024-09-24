@@ -64,7 +64,7 @@
                     <div>
                         <img src="./assets/noakhali.png" class="rounded-lg shadow-2xl" />
                     </div>
-                    <div class="md:w-6/12  h-full gap-y-8">
+                    <div id="donate-1" class="md:w-6/12  h-full gap-y-8">
                         <button class="my-4 btn btn-sm">
                             <img src="./assets/coin.png">
                             <p id="raised-for-noakhali">600.00</p>
@@ -78,8 +78,9 @@
                         </p>
                         <input type="text" placeholder="Write donation amount" id="amount-for-noakhali"
                             class="input input-bordered w-full max-w-full" /> <br> <br>
-                        <button id="btn-donate-noakhali"
+                        <button id="btn-donate-noakhali" onclick="my_modal_1.showModal()"
                             class="btn w-full bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
+
                     </div>
                 </div>
             </section>
@@ -141,7 +142,7 @@
             </section>
         </section>
         <!-- History Section -->
-        <section id="history-section" class="hidden">
+        <section id="history-section" class="hidden-50">
             <div class="bg-yellow-100 py-4 my-4 md:my-8">
                 <h1 class="text-6xl font-bold text-center ">Donation History</h1>
             </div>
