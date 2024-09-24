@@ -24,10 +24,10 @@
 </head>
 
 <body class="lexend">
-    <header class=" md:w-11/12 mx-auto mt-0 p-4 md:p-8 sticky top-0 backdrop-blur-md">
+    <header class=" md:w-full mx-auto mt-0 p-4 md:p-8 sticky top-0 backdrop-blur-md">
         <div class="backdrop-blur-md">
             <nav class="">
-                <div class="navbar mt-0 md:px-8 backdrop-blur-3xl rounded-lg">
+                <div class="navbar bg-yellow-50 mt-0 md:px-8 backdrop-blur-3xl rounded-lg">
                     <div class="navbar-start">
                         <a id="blog"
                             class="btn border-none bg-lime-400  hover:bg-lime-500 text-xl font-semibold">Blog</a>
@@ -48,9 +48,9 @@
             <div class="container mx-auto flex justify-center items-center gap-4 md:gap-6">
                 </section>
                 <button id="donate"
-                    class="btn border-none bg-lime-400  hover:bg-lime-500 sm:btn-xl md:btn-lg lg:btn-lg px-4 py-2 md:px-12">Donate</button>
+                    class="btn border-none bg-lime-400  hover:bg-lime-500 text-black sm:btn-xl md:btn-lg lg:btn-lg px-4 py-2 md:px-12">Donate</button>
                 <button id="history"
-                    class="btn border-none sm:btn-xl md:btn-md lg:btn-lg px-4 md:px-12">History</button>
+                    class="btn border-none hover:bg-lime-500 text-gray-500 sm:btn-xl md:btn-md lg:btn-lg px-4 md:px-12">History</button>
             </div>
         </div>
     </header>
@@ -77,9 +77,9 @@
                             efforts and making a positive impact on the lives of those in need.
                         </p>
                         <input type="text" placeholder="Write donation amount" id="amount-for-noakhali"
-                            class="input input-bordered w-full max-w-xl" /> <br> <br>
+                            class="input input-bordered w-full max-w-full" /> <br> <br>
                         <button id="btn-donate-noakhali"
-                            class="btn w-9/12 bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
+                            class="btn w-full bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
                     </div>
                 </div>
             </section>
@@ -105,9 +105,9 @@
                             urgent need.
                         </p>
                         <input type="text" placeholder="Write donation amount" id="amount-for-feni"
-                            class="input input-bordered w-full max-w-xl" /> <br> <br>
+                            class="input input-bordered w-full max-w-full" /> <br> <br>
                         <button id="btn-donate-feni"
-                            class="btn w-9/12 bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
+                            class="btn w-full bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
                     </div>
                 </div>
             </section>
@@ -133,9 +133,9 @@
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
                         <input type="text" placeholder="Write donation amount" id="amount-for-student"
-                            class="input input-bordered w-full max-w-xl" /> <br> <br>
+                            class="input input-bordered w-full max-w-full" /> <br> <br>
                         <button id="btn-donate-students"
-                            class="btn w-9/12 bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
+                            class="btn w-full bg-lime-400 text-xl font-bold hover:bg-lime-500">Donate Now</button>
                     </div>
                 </div>
             </section>
@@ -146,10 +146,13 @@
         </section>
     </main>
 
-
+    <footer class="footer footer-center bg-yellow-50 text-base-content p-4">
+        <aside class="my-10">
+          <p>Copyright © - All right reserved by Donate Bangladesh</p>
+        </aside>
+      </footer>
 
     <script src="./JS/event.js"></script>
-    <script src="./JS/utility.js"></script>
 </body>
 
 </html>

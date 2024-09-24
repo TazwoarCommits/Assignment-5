@@ -5,35 +5,6 @@ document.getElementById('blog').addEventListener('click', function() {
   });
 
   
-// ---------------------------------  Tab Swithching Buttons  -------------------------------
-const donate = document.getElementById('donate')
-const history = document.getElementById('history');
-
-const donateSection = document.getElementById('donate-section') ;
-const historySection = document.getElementById('history-section') ; 
-
-history.addEventListener('click', function () {
-    history.classList.add('bg-lime-400');
-    history.classList.add('hover:bg-lime-500');
-
-    donate.classList.remove('bg-lime-400');
-
-    
-    donateSection.classList.add('hidden') ;
-
-    
-    historySection.classList.remove('hidden')
-}) ;
-
-donate.addEventListener('click', function () {
-    donate.classList.add('bg-lime-400');
-
-    history.classList.remove('bg-lime-400');
-
-    historySection.classList.add('hidden');
-
-    donateSection.classList.remove('hidden')
-});
 
 // ------------------------------------------  Reusable Get Value Function ----------------------------
 
@@ -139,3 +110,42 @@ document.getElementById('btn-donate-students').addEventListener('click' , functi
 
    document.getElementById('amount-for-student').value = ''
 }) ;
+
+
+// ---------------------------------  Tab Swithching Buttons  -------------------------------
+const donate = document.getElementById('donate')
+const history = document.getElementById('history');
+
+const donateSection = document.getElementById('donate-section') ;
+const historySection = document.getElementById('history-section') ; 
+
+history.addEventListener('click', function () {
+
+    history.classList.add('bg-lime-400' , 'text-black');
+
+    history.classList.remove('text-gray-500') ;
+
+    donate.classList.remove('bg-lime-400');
+    
+    donate.classList.add('text-gray-500');
+    
+    donateSection.classList.add('hidden') ;
+
+    
+    historySection.classList.remove('hidden')
+}) ;
+
+donate.addEventListener('click', function () {
+
+    donate.classList.add('bg-lime-400' , 'text-black');
+
+    donate.classList.remove('text-gray-500') ;
+
+    history.classList.remove('bg-lime-400' , 'text-black');
+
+    history.classList.add('text-gray-500')
+
+    historySection.classList.add('hidden');
+
+    donateSection.classList.remove('hidden')
+});
