@@ -56,7 +56,9 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
     document.getElementById('amount-for-noakhali').value = '';
 
-    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
+    document.getElementById("my_modal_1").showModal();
+
+    // return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 
 });
 
@@ -105,7 +107,10 @@ document.getElementById('btn-donate-feni').addEventListener('click', function ()
 
     document.getElementById('amount-for-feni').value = '';
 
-    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
+    document.getElementById("my_modal_1").showModal();
+
+
+    // return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 });
 
 
@@ -152,8 +157,10 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
 
 
     document.getElementById('amount-for-student').value = ''
+     
+    document.getElementById("my_modal_1").showModal();
 
-    return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
+    // return alert(' Congrates!!! You Have Donated For Humankind Successfully.')
 });
 
 
