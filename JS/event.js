@@ -147,7 +147,7 @@ document.getElementById('btn-donate-students').addEventListener('click', functio
     historyItem3.className = 'bg-yellow border-2 p-4 md:p-12 rounded-xl shadow-xl ml-4 md:ml-8';
 
     historyItem3.innerHTML = `
-  <h2 class = "text-xl md:text-3xl font-semibold"> ${forStudentNumber} Taka is Donated for famine-2024 at Feni, Bangladesh </h2>
+  <h2 class = "text-xl md:text-3xl font-semibold"> ${forStudentNumber} Taka is Donated for injured Students during Quota protest, Bangladesh </h2>
   <p> Date ${new Date()} </p>
 `;
 
